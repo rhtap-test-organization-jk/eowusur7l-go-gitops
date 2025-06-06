@@ -3,7 +3,7 @@
 library identifier: 'RHTAP_Jenkins@v1.6', retriever: modernSCM(
   [$class: 'GitSCMSource',
    remote: 'https://github.com/redhat-appstudio/tssc-sample-jenkins.git'],
-   rawRefSpecs: 'release-v1.6.x')
+   branches: [[name: 'release-v1.6.x']])
 
 pipeline {
     agent {
