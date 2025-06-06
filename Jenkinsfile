@@ -27,11 +27,11 @@ pipeline {
         /* Used to verify the image signature and attestation */
         /*  */
         /* URL of the BOMbastic api host (e.g. https://sbom.trustification.dev) */
-        TRUSTIFICATION_BOMBASTIC_API_URL = credentials('TRUSTIFICATION_BOMBASTIC_API_URL')
+        TRUSTIFICATION_BOMBASTIC_API_URL = 'https://server-tssc-tpa.apps.cluster-5hgrs.5hgrs.sandbox1105.opentlc.com'
         /* URL of the OIDC token issuer (e.g. https://sso.trustification.dev/realms/chicken) */
-        TRUSTIFICATION_OIDC_ISSUER_URL = credentials('TRUSTIFICATION_OIDC_ISSUER_URL')
-        TRUSTIFICATION_OIDC_CLIENT_ID = credentials('TRUSTIFICATION_OIDC_CLIENT_ID')
-        TRUSTIFICATION_SUPPORTED_CYCLONEDX_VERSION = credentials('TRUSTIFICATION_SUPPORTED_CYCLONEDX_VERSION')
+        TRUSTIFICATION_OIDC_ISSUER_URL = 'https://sso.apps.cluster-5hgrs.5hgrs.sandbox1105.opentlc.com/realms/chicken/protocol/openid-connect/token'
+        TRUSTIFICATION_OIDC_CLIENT_ID = 'cli'
+        TRUSTIFICATION_SUPPORTED_CYCLONEDX_VERSION = '1.4'
         /* Set when using Jenkins on non-local cluster and using an external Rekor instance */
         /* REKOR_HOST = credentials('REKOR_HOST') */
         /* Set when using Jenkins on non-local cluster and using an external TUF instance */
